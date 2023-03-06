@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <declare-styleable name="BatterySimpleView">
+        <attr name="bsv_outRadius" format="dimension" /><!--外边框圆角-->
+        <attr name="bsv_outStorkWidth" format="dimension"/><!--外边线的宽度-->
+
+        <attr name="bsv_inRadius" format="dimension" /><!--内容圆角-->
+        <attr name="bsv_inPower" format="integer"   android:min="0"  android:max="100"  /><!--进度-->
+
+        <attr name="bsv_outColorDefault" format="color" /><!--线条底色-->
+        <attr name="bsv_inColorDefault" format="color" /><!--填充颜色底色-->
+        <attr name="bsv_inColorSelect" format="color" /><!--选中填充颜色-->
+    </declare-styleable>
+
+    <declare-styleable name="BatteryView">
+        <attr name="bv_outRadius" format="dimension" /><!--外边框圆角-->
+        <attr name="bv_outStorkWidth" format="dimension"/><!--外边线的宽度-->
+        <attr name="bv_inRadius" format="dimension" /><!--内容圆角-->
+
+        <attr name="bv_inPower" format="integer"   android:min="0"  android:max="100"  /><!--进度-->
+        <attr name="bv_outPower" format="integer"   android:min="0"  android:max="100"  /><!--进度-->
+
+        <attr name="bv_outColorDefault" format="color" /><!--线条底色-->
+        <attr name="bv_outColorSelect" format="color" /><!--选中的线条颜色-->
+        <attr name="bv_inColorDefault" format="color" /><!--填充颜色底色-->
+        <attr name="bv_inColorSelect" format="color" /><!--选中填充颜色-->
+    </declare-styleable>
+
+    <declare-styleable name="CreditSesameView">
+        <attr name="cs_radius" format="dimension"/><!--最外层圆弧半径-->
+        <attr name="cs_out_progress" format="integer"/><!--外圆弧当前进度0-100 -->
+        <attr name="cs_in_progress" format="integer"/><!--内圆弧当前进度0-100 -->
+        <attr name="cs_point_src" format="reference"/><!--指针图片-->
+    </declare-styleable>
+</resources>

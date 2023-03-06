@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.example.myapplication.BatteryView
+        android:id="@+id/battery"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="45dp" />
+
+    <com.example.myapplication.BatterySimpleView
+        android:id="@+id/barrier2"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        app:bsv_inPower="20"
+        app:bsv_inRadius="1dp"
+        app:bsv_outRadius="2dp"
+        app:bsv_outStorkWidth="1dp"/>
+
+    <com.example.myapplication.CreditSesameView
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cs_radius="45dp"
+        app:cs_in_progress="10"
+        app:cs_out_progress="10"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="外边线"/>
+    <SeekBar
+        android:id="@+id/out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="内边线"/>
+    <SeekBar
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
